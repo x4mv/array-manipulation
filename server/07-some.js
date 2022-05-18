@@ -12,3 +12,6 @@ for (let index = 0; index < numbers.length; index++) {
 const answ = numbers.some(element => element%2 === 0)
 console.log(answ) 
 console.log(condition) 
+/*
+hola mundo
+*/ 

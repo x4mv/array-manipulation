@@ -29,3 +29,20 @@ const listProducts = products.map( Element => {
 })
 
 app.innerHTML = listProducts.join('')
+
+
+var removeElement = function(nums, val) {
+    let solve = []
+    const filter = nums.filter(element => element !== 3)
+    solve = [...filter]
+    const diff = solve.lenght - nums.length
+    if(solve.lenght < nums.length){
+        for(let i = 0; i < diff ; i++){
+            solve.push("_")
+        }
+    }
+    
+    return solve
+};
+
+console.log(removeElement([3,2,2,3], 3))
